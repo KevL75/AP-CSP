@@ -1,0 +1,30 @@
+var tips = ["Turn off notifications.", "Delete social media apps", "Leave your phone out of the plain sight", "Keep your phone out of plain sight"];
+//Source: https://www.insider.com/guides/health/mental-health/taking-a-break-from-social-media
+var someText = 0;
+onEvent("tipsButton", "click", function( ) {
+  someText = getNumber("timeInput");
+  if(someText >= 10){
+    setProperty("Comment", "text", "That's a lot of screen time, you may want to read the tip below!");
+    }else{
+    setProperty("Comment","text","Oh wow, you spend very little time on electronics!");
+  }
+  setScreen("TipsScreen");
+});
+
+function randomTip(list){
+  for(var i = 0; i<tips.length-1;i++){
+    var pickTip = list[(randomNumber(0,tips.length-1))];
+  return pickTip;
+  }
+}
+
+function updateScreen(){
+  setProperty("tipsDisplay", "text", randomTip(tips));
+}
+updateScreen();
+
+onEvent("goAgain", "click", function(){
+  setScreen("mainScreen");
+  setProperty("tipsDisplay", "text", randomTip(tips));
+
+});
