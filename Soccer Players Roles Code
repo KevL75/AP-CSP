@@ -1,0 +1,68 @@
+//Worked on this with sophie :D
+//Credits
+//Player pictures: https://d3rqy6w6tyyf68.cloudfront.net/AcuCustom/Sitename/DAM/023/rotation.jpg
+//Field Picture: https://d29fhpw069ctt2.cloudfront.net/clipart/105695/preview/focadima_Soccer_Field_preview_1438.png
+//Goalie Picture: https://www.wikihow.com/images/thumb/a/a6/Be-Fearless-as-a-Soccer-Goalie-Step-2-Version-3.jpg/aid145110-v4-728px-Be-Fearless-as-a-Soccer-Goalie-Step-2-Version-3.jpg.webp
+//Defender Picture: https://www.wikihow.com/images/thumb/6/62/Be-a-Good-Soccer-Defender-Step-1-Version-4.jpg/aid607502-v4-728px-Be-a-Good-Soccer-Defender-Step-1-Version-4.jpg.webp
+//Midfielder Picture: https://www.wikihow.com/images/thumb/e/ef/Pass-a-Soccer-Ball-Step-13-Version-3.jpg/aid58799-v4-728px-Pass-a-Soccer-Ball-Step-13-Version-3.jpg.webp
+//Forward Picture: https://www.wikihow.com/images/thumb/e/e0/Pass-a-Soccer-Ball-Step-8-Version-4.jpg/aid58799-v4-728px-Pass-a-Soccer-Ball-Step-8-Version-4.jpg.webp
+onEvent ("goalKeeper", "click", function( ) {
+  setScreen("goalkeeperScreen");
+  playSound("https://audio.code.org/win1.mp3", false);
+});
+onEvent ("leftBack", "click", function( ) {
+  setScreen("defenderScreen");
+  playSound("https://audio.code.org/win3.mp3", false);
+});
+onEvent ("centerbackLeft", "click", function( ) {
+  setScreen("defenderScreen");
+  playSound("https://audio.code.org/win3.mp3", false);
+});
+onEvent ("centerbackRight", "click", function( ) {
+  setScreen("defenderScreen");
+  playSound("https://audio.code.org/win3.mp3", false);
+});
+onEvent ("rightBack", "click", function( ) {
+  setScreen("defenderScreen");
+  playSound("https://audio.code.org/win3.mp3", false);
+});
+onEvent ("leftWing", "click", function( ) {
+  setScreen("midfieldScreen");
+  playSound("https://audio.code.org/start2.mp3", false);
+});
+onEvent ("defendingMidfield", "click", function( ) {
+  setScreen("midfieldScreen");
+  playSound("https://audio.code.org/start2.mp3", false);
+});
+onEvent ("attackingMidfield", "click", function( ) {
+  setScreen("midfieldScreen");
+  playSound("https://audio.code.org/start2.mp3", false);
+});
+onEvent ("rightWing", "click", function( ) {
+  setScreen("midfieldScreen");
+  playSound("https://audio.code.org/start2.mp3", false);
+});
+onEvent ("leftForward", "click", function( ) {
+  setScreen("forwardScreen");
+  playSound("https://audio.code.org/win2.mp3", false);
+});
+onEvent ("rightForward", "click", function( ) {
+  setScreen("forwardScreen");
+  playSound("https://audio.code.org/win2.mp3", false);
+});
+onEvent ("goalieBack", "click", function( ) {
+  setScreen("homeScreen");
+});
+onEvent ("defenderBack", "click", function( ) {
+  setScreen("homeScreen");
+});
+
+onEvent ("midfieldBack", "click", function( ) {
+  setScreen("homeScreen");
+});
+
+onEvent ("forwardBack", "click", function( ) {
+  setScreen("homeScreen");
+});
+
+
